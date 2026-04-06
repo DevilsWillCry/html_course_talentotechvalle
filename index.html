@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>My first Stream Picker</title>
+    <meta name="description" content="My first Stream Picker is a web application that allows users to discover and explore a curated selection of movies and music. With an intuitive interface and personalized recommendations, users can easily find their next favorite film or album. Whether you're a cinephile or a music enthusiast, My first Stream Picker offers a diverse range of options to suit every taste. Start your journey of cinematic and musical discovery today!" />
+    <link rel="icon" href="./assets/icons/codificacion.png " type="image/png">
+  </head>
+  <body>
+    <nav class="nav_menu">
+      <h1 class="nav_menu_title">MY<strong>STREAM</strong>PICKS</h1>
+      <ul class="nav_menu_links">
+        <ul>
+          <a href="#home" rel="noreferrer noopener">Inicio</a>
+        </ul>
+        <ul>
+          <a href="#movies" rel="noreferrer noopener">Top picks</a>
+        </ul>
+        <ul>
+          <a href="#feedback" rel="noreferrer noopener">Feedback</a>
+        </ul>
+      </ul>
+    </nav>
+    <div class="main_section" id="home">
+      <div class="main_section_text">
+        <h1>
+          Descubre la diversidad <strong>cinematográfica</strong> y
+          <strong>musical</strong>
+        </h1>
+        <p>
+          Explora mi selección cuidadosamente escogida de películas y música
+          para que puedas disfrutar de una experiencia inolvidable.¡Comienza tu
+          viaje cinematográfico y músical hoy!
+        </p>
+        <button class="main_section_button">Explorar lista &#10095;</button>
+      </div>
+      <div class="carousel">
+        <div class="slides">
+          <div class="slide active">
+            <img
+              class="main_section_image"
+              src="./assets/interestellar_main_image.jpg"
+              alt="Interstellar Movie Poster"
+            />
+            <div class="content">
+              <h2><span>Interstellar</span></h2>
+              <p>Una experiencia que redefine el tiempo y el espacio</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              class="main_section_image"
+              src="./assets/bladerunner2049_image.jpg"
+              alt="Bladerunner 2049 Movie Poster"
+            />
+            <div class="content">
+              <h2><span>Bladerunner 2049</span></h2>
+              <p>Un viaje al futuro distante</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              class="main_section_image"
+              src="./assets/beach_house_image.jpg"
+              alt="Beach House Album Music Poster"
+            />
+            <div class="content">
+              <h2><span>Beach House</span></h2>
+              <p>Un sonido que te transporta a lo inimaginable</p>
+            </div>
+          </div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </div>
+    <div class="top_picks_section" id="movies">
+      <h2 class="title_top_picks"><span>Top Picks</span></h2>
+      <div class="carousel_top_picks">
+        <div class="slides_top_picks" id="slides_top_picks"></div>
+
+        <button class="prev_top_picks">&#10094;</button>
+        <button class="next_top_picks">&#10095;</button>
+      </div>
+    </div>
+    <div class="feedback_section" id="feedback">
+      <section class="form-section">
+        <form class="form-card">
+          <h2><span>¡Recomienda!</span></h2>
+
+          <div class="row">
+            <div class="field">
+              <label>Nombre</label>
+              <input type="text" placeholder="Nombre completo..." required />
+            </div>
+
+            <div class="field">
+              <label>Email</label>
+              <input type="email" placeholder="email@example.com" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Sugerencia</label>
+            <input type="text" placeholder="Nombre de la película o artista" required/>
+          </div>
+
+          <button type="submit">Envía tu sugerencia</button>
+        </form>
+      </section>
+    </div>
+    <footer class="footer">
+      <h3 class="logo">MYSTREAMPICKS</h3>
+
+      <div class="footer-links">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/devils.will.cry/"><img src="./assets/icons/instagram.png" alt="instagram account"></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/miguel-angel-menaca-coral/"><img src="./assets/icons/linkedin.png" alt="linkedin account"></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://migueldevfolio.vercel.app/"><img src="./assets/icons/maletin.png" alt="maletin account"></a>
+      </div>
+
+      <p class="copyright">© 2026 MyStream Picks. Made By Miguel Angel Meñaca Coral</p>
+    </footer>
+  </body>
+  <script src="script.js" type="module"></script>
+</html>
