@@ -92,4 +92,4 @@ function update() {
 setInterval(() => {
   index = (index + 1) % pages.length;
   update();
-}, 5000);
+}, 15000);
