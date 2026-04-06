@@ -63,7 +63,7 @@ pages.forEach((page) => {
             <div class="card-content">
                 <span>${item.category}</span>
                 <h3>${item.title}</h3>
-                <p>${item.description[1]}</p>
+                <p>${item.description.split(' ').slice(0, 10).join(' ')}...</p>
                 <small>${item.year} - Rating: ${item.rating}</small>
             </div>`;
     pageDiv.appendChild(card);
@@ -93,3 +93,4 @@ setInterval(() => {
   index = (index + 1) % pages.length;
   update();
 }, 15000);
+
